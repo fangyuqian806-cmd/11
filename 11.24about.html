@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>关于我们与用户研究 · 决策骰子 Pro</title>
+<meta name="description" content="决策骰子 Pro —— 用加权随机帮你做决定，并给这个决定一个能说服你的理由。">
+<meta name="theme-color" content="#FF66C8">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="决策骰子 Pro 首页">
+      <span class="brand__die" aria-hidden="true">⚄</span>
+      <span class="brand__txt">决策骰子 <span>Pro</span></span>
+    </a>
+    <nav class="nav__links" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="dice.html">开始决策</a>
+      <a href="analysis.html">我的档案</a>
+      <a href="about.html" class="is-active" aria-current="page">关于我们</a>
+    </nav>
+    <a class="btn btn--ink btn--sm nav__cta" href="dice.html">摇一次 <span class="btn__ico" aria-hidden="true">→</span></a>
+    <button class="navToggle" id="navToggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="打开菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="站点导航">
+  <div class="menu__links">
+    <a href="index.html"><small>01</small>首页</a>
+    <a href="dice.html"><small>02</small>开始决策</a>
+    <a href="analysis.html"><small>03</small>我的档案</a>
+    <a href="about.html"><small>04</small>关于我们</a>
+  </div>
+  <div class="menu__foot">把犹豫交给概率，把理由留给命运。</div>
+</div>
+
+<div class="site">
+  <div class="site__edge" aria-hidden="true"></div>
+
+  <!-- ========== 页首 ========== -->
+  <section class="band band--pink pagehead">
+    <div class="band__inner">
+      <span class="script script--ink" aria-hidden="true">our story</span>
+      <h1>我们想做的不是一枚骰子，<br>而是一个<span class="mark">允许你不理性</span>的助手</h1>
+      <p class="lead">「决策骰子 Pro」诞生于一次小组讨论：三个人为了「中午吃什么」僵持了 25 分钟，最后用微信骰子解决——但骰子只是把决定权平均分了出去，它并不懂我们其实更想吃火锅。</p>
+    </div>
+  </section>
+
+  <!-- ========== 创意来源 ========== -->
+  <section class="band band--ink">
+    <div class="band__inner">
+      <div class="grid grid--2" style="align-items:start;gap:clamp(28px,4vw,56px)">
+        <div>
+          <span class="script script--grad" aria-hidden="true">why though</span>
+          <h2>创意从哪来</h2>
+          <div class="prose">
+            <p>访谈中我们发现，选择困难的核心不是「信息不足」，而是「无法承担宣布」的心理压力——一旦亲口说出选择，就要为结果负责；而交给外部随机，责任感会被稀释，后悔也随之减轻。</p>
+            <p>但纯粹的随机又抹掉了偏好。于是我们做了折中：<strong>用权重保留偏好，用随机免除责任，用理由完成交代</strong>。</p>
+          </div>
+        </div>
+        <aside class="card card--dark" style="margin-top:8px">
+          <div class="chip-icon chip-icon--lime" aria-hidden="true">✦</div>
+          <h3>一句话版本</h3>
+          <p style="font-size:18px;line-height:1.66;color:#fff;font-weight:700;letter-spacing:-.01em">把犹豫交给概率，把理由留给命运——但前提是，概率得按你的偏心分配。</p>
+          <p style="margin-top:14px;font-family:var(--ff-script);font-size:26px;color:var(--lime);line-height:1">not pure random.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 三个原则 ========== -->
+  <section class="band">
+    <div class="band__inner">
+      <div class="section-head">
+        <span class="script script--ink" aria-hidden="true">rules of thumb</span>
+        <h2>三个关键设计原则</h2>
+        <p class="lead">它们决定了这个产品能做什么、以及明确不做什么。</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="card card--tint reveal" style="--d:0s">
+          <div class="step__num" aria-hidden="true">01</div>
+          <h3>可解释优先</h3>
+          <p>任何一次结果都必须能被追溯到种子与区间，拒绝黑箱。解释面板默认收起，但永远只隔一次点击。</p>
+        </article>
+        <article class="card card--tint-lime reveal" style="--d:.09s">
+          <div class="step__num" aria-hidden="true">02</div>
+          <h3>不替代判断</h3>
+          <p>产品永远把最终决定权交回用户，只提供「最后一推」。摇完不服，随时可以推翻重来，只是会被记下来。</p>
+        </article>
+        <article class="card card--tint-violet reveal" style="--d:.18s">
+          <div class="step__num" aria-hidden="true">03</div>
+          <h3>克制的情感化</h3>
+          <p>命运理由是产品的人格，但它只负责表达，不负责操纵。六类场景、拟人主体、确定性句式，没有一句在催你下单。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 研究 ========== -->
+  <section class="band band--yellow">
+    <div class="band__inner">
+      <div class="section-head">
+        <span class="script script--ink" aria-hidden="true">the receipts</span>
+        <h2>86 份问卷、12 次访谈，<br>才敢说这句话</h2>
+        <p class="lead">用户研究不是装饰。下面三个数字，直接决定了界面上要露什么、藏什么。</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="metric reveal" style="--d:0s">
+          <b>N = 86</b>
+          <span>线上问卷有效样本，覆盖 18–32 岁的高频决策困难人群，Cronbach's α = 0.87。</span>
+        </div>
+        <div class="metric reveal" style="--d:.09s">
+          <b>8.4 → 3.1 分钟</b>
+          <span>使用原型前后，单次日常决策的平均耗时下降约 63%。</span>
+        </div>
+        <div class="metric reveal" style="--d:.18s">
+          <b>92.9%</b>
+          <span>认为「命运理由」让结果更容易被自己接受，并愿意继续使用。</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 团队 ========== -->
+  <section class="band">
+    <div class="band__inner">
+      <div class="section-head">
+        <span class="script script--ink" aria-hidden="true">three humans</span>
+        <h2>团队分工</h2>
+      </div>
+      <div class="grid grid--3">
+        <article class="card card--tint">
+          <h3>【成员 A】</h3>
+          <p>交互设计与前端实现、可解释性机制</p>
+        </article>
+        <article class="card card--tint-lime">
+          <h3>【成员 B】</h3>
+          <p>用户访谈、问卷设计与数据分析</p>
+        </article>
+        <article class="card card--tint-violet">
+          <h3>【成员 C】</h3>
+          <p>视觉系统、宣传海报与文档整合</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 页脚 ========== -->
+  <footer class="band band--pink foot">
+    <div class="foot__inner">
+      <div class="cta-card">
+        <span class="script script--grad" aria-hidden="true">go on</span>
+        <h2>想亲手试试？</h2>
+        <p>全部逻辑在本地运行，不联网、不注册、不留痕。所有随机都发生在你按下按钮的那一瞬间。</p>
+        <div class="btn-group">
+          <a class="btn btn--lime btn--lg" href="dice.html">开始决策 <span class="btn__ico" aria-hidden="true">→</span></a>
+        </div>
+        <svg class="cta-card__art" viewBox="0 0 200 200" aria-hidden="true">
+          <path d="M40 150l120-120" stroke="#CBFB45" stroke-width="10" stroke-linecap="round"/>
+          <circle cx="150" cy="42" r="22" fill="#FF66C8" stroke="#121212" stroke-width="6"/>
+        </svg>
+      </div>
+      <nav class="foot__nav" aria-label="页脚导航">
+        <a href="index.html">首页</a>
+        <a href="dice.html">开始决策</a>
+        <a href="analysis.html">我的档案</a>
+        <a href="about.html">关于我们</a>
+      </nav>
+      <div class="foot__bottom">
+        <div>© 2026 决策骰子 Pro · 互动媒体设计与用户研究 小组作业</div>
+        <div>原型可离线运行 · 数据仅存于本地浏览器</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="assets/js/ui.js"></script>
+</body>
+</html>
